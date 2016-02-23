@@ -30,4 +30,5 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.firebase:firebase-client-android:2.5.0+'
     compile 'com.firebaseui:firebase-ui:0.3.0'
+    compile 'com.compscieddy:eddie-utils:0.7+'
 }
