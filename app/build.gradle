@@ -20,6 +20,19 @@ android {
     buildTypes.each {
         it.buildConfigField 'String', 'UNIQUE_FIREBASE_ROOT_URL', UniqueFirebaseRootUrl
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
 }
 
 dependencies {
@@ -30,5 +43,5 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.firebase:firebase-client-android:2.5.0+'
     compile 'com.firebaseui:firebase-ui:0.3.0'
-    compile 'com.compscieddy:eddie-utils:0.7+'
+    compile 'com.compscieddy:eddie-utils:0.7'
 }
