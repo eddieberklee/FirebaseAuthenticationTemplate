@@ -24,7 +24,7 @@ import butterknife.OnClick;
 
 public class AuthenticationActivity extends AppCompatActivity {
 
-  private static final Lawg lawg = new Lawg(AuthenticationActivity.class.getSimpleName());
+  private static final Lawg lawg = Lawg.newInstance(AuthenticationActivity.class.getSimpleName());
 
   @Bind(R.id.email) EditText mEmail;
   @Bind(R.id.password) EditText mPassword;
@@ -91,7 +91,8 @@ public class AuthenticationActivity extends AppCompatActivity {
           @Override
           public void onDataChange(DataSnapshot dataSnapshot) {
             lawg.d("Logged into email: " + email + " dataSnapshot: " + dataSnapshot);
-            if (dataSnapshot.getValue() == null) { // If it doesn't exist, just recreate it - this can happen when the database is cleared
+            // If it doesn't exist, just recreate it - this can happen when the database is cleared
+            if (dataSnapshot.getValue() == null) {
               populateUserFirebaseData(lawg, encodedEmail);
             }
 
