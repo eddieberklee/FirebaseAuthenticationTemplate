@@ -1,4 +1,4 @@
-package com.compscieddy.firebaseauthenticationtemplate;
+package com.compscieddy.didwhat;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

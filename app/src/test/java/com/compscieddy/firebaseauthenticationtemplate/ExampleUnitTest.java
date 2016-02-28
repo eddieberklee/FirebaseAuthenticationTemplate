@@ -1,4 +1,4 @@
-package com.compscieddy.firebaseauthenticationtemplate;
+package com.compscieddy.didwhat;
 
 import org.junit.Test;
 
