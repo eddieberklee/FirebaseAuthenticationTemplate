@@ -1,4 +1,4 @@
-package com.compscieddy.firebaseauthenticationtemplate;
+package com.compscieddy.didwhat;
 
 import android.content.Context;
 import android.content.res.TypedArray;
