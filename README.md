@@ -11,4 +11,7 @@ To get it up and running
 
 * Need to edit gradle.properties with your own unique firebase url.
 
+TODO:
+=====
+* Fix the password input to be a password input type
 
