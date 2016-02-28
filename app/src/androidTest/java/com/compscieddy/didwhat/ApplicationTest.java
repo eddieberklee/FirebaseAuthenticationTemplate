@@ -1,4 +1,4 @@
-package com.compscieddy.firebaseauthenticationtemplate;
+package com.compscieddy.didwhat;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
