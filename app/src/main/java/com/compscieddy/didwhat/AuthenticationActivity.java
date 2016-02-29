@@ -104,11 +104,12 @@ public class AuthenticationActivity extends AppCompatActivity {
 
           @Override
           public void onCancelled(FirebaseError firebaseError) {
+            lawg.e("onCancelled() while logging in firebaseError: " + firebaseError);
+            
             mProgressBar.setVisibility(View.INVISIBLE);
             if (firebaseError.getCode() == FirebaseError.INVALID_PASSWORD) {
               Etils.showToast(AuthenticationActivity.this, "Wrong password!");
             }
-            lawg.e("onCancelled() while logging in firebaseError: " + firebaseError);
           }
         });
       }
