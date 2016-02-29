@@ -1,4 +1,4 @@
-package com.compscieddy.didwhat;
+package com.compscieddy.firebaseauthtemplate;
 
 import android.app.Application;
 

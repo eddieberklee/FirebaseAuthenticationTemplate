@@ -1,4 +1,4 @@
-package com.compscieddy.didwhat;
+package com.compscieddy.firebaseauthtemplate;
 
 /**
  * Created by elee on 2/22/16.
