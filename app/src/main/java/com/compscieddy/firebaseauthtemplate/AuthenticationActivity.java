@@ -36,6 +36,8 @@ public class AuthenticationActivity extends BaseActivity {
     setContentView(R.layout.activity_authentication);
     ButterKnife.bind(this);
 
+    mEmail.setText("test@test.com");
+    mPassword.setText("password");
   }
 
   @OnClick(R.id.authentication_button)

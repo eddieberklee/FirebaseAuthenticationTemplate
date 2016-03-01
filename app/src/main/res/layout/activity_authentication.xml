@@ -15,27 +15,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_centerHorizontal="true"
         android:gravity="center_horizontal">
         <com.compscieddy.firebaseauthtemplate.EddieTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
             android:text="Logo"/>
         <com.compscieddy.firebaseauthtemplate.EddieEditText
             android:id="@+id/email"
-            android:layout_width="wrap_content"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
+            android:textSize="14sp"
             app:fontface="montserrat_light"
             android:hint="enter email..."/>
         <com.compscieddy.firebaseauthtemplate.EddieEditText
             android:id="@+id/password"
-            android:layout_width="wrap_content"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textSize="14sp"
             app:fontface="montserrat_light"
             android:hint="enter password..."/>
         <Button
             android:id="@+id/authentication_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="Login/Signup"/>
     </LinearLayout>
 
