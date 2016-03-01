@@ -61,7 +61,8 @@ abstract class FirebaseObject {
   }
 
   protected void updateFirebase(String FIELD, Object value) {
-    // LOL cause fucking Firebase uses these same setters and I didn't read it in their documentation
+    /** LOL cause fucking Firebase uses any setters it finds when deserializing and I didn't read it in their documentation,
+     * so a null key means it's Firebase that's deserializing no when I'm calling the setter in code */
     if (key == null) { // Object didn't go through FirebaseObject() so it must be the JSON Deserializer
       return;
     }
