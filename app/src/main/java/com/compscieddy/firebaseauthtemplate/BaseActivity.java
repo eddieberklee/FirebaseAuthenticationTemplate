@@ -53,6 +53,15 @@ public class BaseActivity extends AppCompatActivity {
     return encodedEmail;
   }
 
+  protected User populateUserFirebaseData(Lawg lawg) {
+    lawg.d("Doesn't exist so repopulating this data");
+    String encodedEmail = getEncodedEmail();
+    User newUser = new User(encodedEmail);
+    Firebase newUserRef = new Firebase(Constants.FIREBASE_URL_USERS).child(encodedEmail);
+    newUserRef.setValue(newUser);
+    return newUser;
+  }
+
   protected void logout() {
     new Firebase(Constants.FIREBASE_URL).unauth();
 
